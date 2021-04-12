@@ -59,13 +59,7 @@ const App = () => {
         setMealType(mealType);
         setTime(time);
         setIngredients(ingredients)
-        console.log(title,
-            image,
-            type,
-            service,
-            source,
-            mealType,
-            time, ingredients)
+        
     };
 
     return (
@@ -105,7 +99,7 @@ const App = () => {
             </div>
             <div className="ingredients">
 
-                    {title != '' ? <Ingredients
+                    {title !== '' ? <Ingredients
                     title={title}
                     image={image}
                     type={type}
